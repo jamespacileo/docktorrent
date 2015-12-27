@@ -2,10 +2,11 @@ docktorrent:
   build: .
   environment:
     - UPLOAD_RATE=1024
+    - AUTH_OFF=yes
   ports:
-    - 0.0.0.0:80:80
-    - 0.0.0.0:45566:45566
-    - 0.0.0.0:9527:9527
+    - "0.0.0.0:80:80"
+    - "0.0.0.0:45566:45566"
+    - "0.0.0.0:9527:9527"
   dns: 8.8.8.8
   volumes:
     - /data-store:/rtorrent
